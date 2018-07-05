@@ -3,15 +3,24 @@
   "version": "1.0.0",
   "description": "A small site that helps with calculation of orbits in planetary systems.",
   "main": "index.html",
-  "scripts": {
-	"dev": "parcel ./src/index.html",
-    "test": "jest",
-	"build": "parcel build ./src/index.html",
-	"deploy": "now && now alias",
-	"coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
-	"lint": "eslint --fix ."
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kochie/orbit-simulator.git"
   },
-  "keywords": ["space", "three-body-problem", "orbit", "physics"],
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "test": "jest",
+    "build": "parcel build ./src/index.html",
+    "deploy": "now && now alias",
+    "coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
+    "lint": "eslint --fix ."
+  },
+  "keywords": [
+    "space",
+    "three-body-problem",
+    "orbit",
+    "physics"
+  ],
   "author": "robert@kochie.io",
   "license": "ISC",
   "devDependencies": {
@@ -22,9 +31,13 @@
     "eslint-plugin-jsx-a11y": "^6.1.0",
     "eslint-plugin-react": "^7.10.0",
     "jest": "^23.3.0",
-    "parcel-bundler": "^1.9.4"
+    "parcel-bundler": "^1.9.4",
+    "typescript": "^2.9.2",
+    "typescript-eslint-parser": "^16.0.1"
   },
   "dependencies": {
+    "@types/react": "^16.4.6",
+    "@types/react-dom": "^16.0.6",
     "react": "^16.4.1",
     "react-dom": "^16.4.1",
     "react-redux": "^5.0.7",
