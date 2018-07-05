@@ -1,0 +1,27 @@
+{
+  "name": "orbit-calculator",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-airbnb": "^17.0.0",
+    "eslint-plugin-import": "^2.13.0",
+    "eslint-plugin-jsx-a11y": "^6.1.0",
+    "eslint-plugin-react": "^7.10.0",
+    "parcel-bundler": "^1.9.4"
+  },
+  "dependencies": {
+    "react": "^16.4.1",
+    "react-dom": "^16.4.1",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "two.js": "^0.7.0-alpha.1"
+  }
+}
