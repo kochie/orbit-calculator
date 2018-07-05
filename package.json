@@ -1,20 +1,27 @@
 {
   "name": "orbit-calculator",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "description": "A small site that helps with calculation of orbits in planetary systems.",
+  "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+	"dev": "parcel ./src/index.html",
+    "test": "jest",
+	"build": "parcel build ./src/index.html",
+	"deploy": "now && now alias",
+	"coverage": "jest --coverage --coverageReporters=text-lcov | coveralls",
+	"lint": "eslint --fix ."
   },
-  "keywords": [],
-  "author": "",
+  "keywords": ["space", "three-body-problem", "orbit", "physics"],
+  "author": "robert@kochie.io",
   "license": "ISC",
   "devDependencies": {
+    "coveralls": "^3.0.2",
     "eslint": "^4.19.1",
     "eslint-config-airbnb": "^17.0.0",
     "eslint-plugin-import": "^2.13.0",
     "eslint-plugin-jsx-a11y": "^6.1.0",
     "eslint-plugin-react": "^7.10.0",
+    "jest": "^23.3.0",
     "parcel-bundler": "^1.9.4"
   },
   "dependencies": {
