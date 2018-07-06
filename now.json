@@ -1,0 +1,16 @@
+{
+	"type": "static",
+	"name": "orbit-calculator",
+	"static": {
+		"public": "./dist"
+	},
+	"files": [
+		"./dist"
+	],
+	"alias": [
+		"orbit.now.sh",
+		"orbit-calculator.now.sh",
+		"orb.now.sh",
+		"nbodyproblem.sh"
+	]
+}
